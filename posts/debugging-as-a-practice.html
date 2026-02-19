@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>On debugging as a practice | 0xbedrock</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div class="container">
+
+    <nav>
+      <div class="links">
+        <a href="../index.html">127.0.0.1</a>
+      </div>
+      <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">dark</button>
+    </nav>
+
+    <article>
+      <header class="post-header">
+        <h1>On debugging as a practice</h1>
+        <time class="post-meta">Oct 2025</time>
+      </header>
+
+      <div class="post-body">
+        <p>
+          Debugging is the part of software development that nobody teaches
+          formally and everybody does constantly. Most of what I know about it
+          I learned the hard way, staring at a screen at a time I'd rather have
+          been doing something else.
+        </p>
+        <p>
+          Over time I've come to think of debugging less as problem-solving and
+          more as a practice — something with principles you can improve at
+          deliberately.
+        </p>
+        <h2>State a hypothesis before you change anything</h2>
+        <p>
+          The worst debugging sessions I've had started with random changes:
+          add a log here, comment something out there, restart the server. This
+          is not debugging, it is flailing. A hypothesis — even a wrong one —
+          forces you to think about the system rather than poke at it.
+        </p>
+        <h2>Reproduce it first</h2>
+        <p>
+          If you can't reproduce the bug reliably, you can't know when you've
+          fixed it. Before touching any code, make the bug happen on demand.
+          This step often reveals the cause before you've written a single line.
+        </p>
+        <h2>The bug is probably in your code</h2>
+        <p>
+          Not in the framework. Not in the database driver. Not in the
+          operating system. It's almost always in your code, and starting from
+          that assumption is faster than the alternative.
+        </p>
+      </div>
+    </article>
+
+    <footer>
+      <time id="last-updated"></time>
+    </footer>
+
+  </div>
+
+  <script src="../js/theme.js"></script>
+</body>
+</html>
